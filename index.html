@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kahve Durağı | Taze Çekilmiş Kahve</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      padding-top: 56px;
+      font-family: 'Poppins', sans-serif;
+      color: #3a2a20;
+    }
+
+    section,
+    footer {
+      scroll-margin-top: 56px;
+    }
+
+    h1,
+    h2,
+    h3,
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .bg-espresso {
+      background-color: #2b1a12;
+    }
+
+    .bg-krem {
+      background-color: #f8f3ec;
+    }
+
+    .text-karamel {
+      color: #c8873f;
+    }
+
+    .text-espresso {
+      color: #2b1a12;
+    }
+
+    .btn-karamel {
+      background-color: #c8873f;
+      border-color: #c8873f;
+      color: #fff;
+    }
+
+    .btn-karamel:hover {
+      background-color: #a96d2c;
+      border-color: #a96d2c;
+      color: #fff;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(43, 26, 18, 0.85), rgba(43, 26, 18, 0.85)),
+        url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600&q=80') center / cover;
+    }
+
+    .kart-gorsel {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .kart-hover {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .kart-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 1rem 2rem rgba(43, 26, 18, 0.15) !important;
+    }
+
+    .ikon-daire {
+      width: 56px;
+      height: 56px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-espresso fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#anasayfa">
+        <i class="bi bi-cup-hot-fill text-karamel me-1"></i> Kahve Durağı
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#anaMenu"
+        aria-controls="anaMenu" aria-expanded="false" aria-label="Menüyü aç">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="anaMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#anasayfa">Ana Sayfa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lezzetler">Lezzetlerimiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+          <li class="nav-item"><a class="nav-link" href="#altbilgi">Bizi Takip Edin</a></li>
+          <li class="nav-item ms-lg-2 my-2 my-lg-0">
+            <a class="btn btn-karamel btn-sm rounded-pill px-3" href="#iletisim">Rezervasyon</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="anasayfa" class="hero text-white py-5">
+    <div class="container py-md-5">
+      <div class="row align-items-center g-4 py-4">
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <span class="badge rounded-pill bg-light text-espresso px-3 py-2 mb-3">
+            <i class="bi bi-stars text-karamel me-1"></i> Yeni sezon çekirdekleri geldi
+          </span>
+          <h1 class="display-4 fw-bold mb-3">Güne Taze Bir <span class="text-karamel">Kahveyle</span> Başlayın</h1>
+          <p class="lead fw-light mb-4">
+            Her sabah taze kavrulan çekirdekler, ev yapımı tatlılar ve sakin bir çalışma ortamı.
+            Kahve Durağı'nda her fincan özenle hazırlanır.
+          </p>
+          <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+            <a href="#lezzetler" class="btn btn-karamel btn-lg rounded-pill px-4">Menüyü İncele</a>
+            <a href="#iletisim" class="btn btn-outline-light btn-lg rounded-pill px-4">Rezervasyon Yap</a>
+          </div>
+          <div class="row text-center text-lg-start g-3 mt-4 pt-3 border-top border-secondary">
+            <div class="col-4">
+              <p class="h3 fw-bold text-karamel mb-0">4.9</p>
+              <p class="small text-white-50 mb-0">Müşteri puanı</p>
+            </div>
+            <div class="col-4">
+              <p class="h3 fw-bold text-karamel mb-0">12</p>
+              <p class="small text-white-50 mb-0">Çeşit çekirdek</p>
+            </div>
+            <div class="col-4">
+              <p class="h3 fw-bold text-karamel mb-0">08–22</p>
+              <p class="small text-white-50 mb-0">Her gün açık</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 d-none d-lg-block">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&q=80"
+            class="img-fluid rounded-4 shadow-lg" alt="Latte art yapılmış bir fincan kahve">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lezzetler" class="py-5 bg-krem">
+    <div class="container py-md-4">
+      <div class="text-center mb-5">
+        <p class="text-karamel fw-semibold text-uppercase small mb-1">Menümüz</p>
+        <h2 class="display-6 fw-bold text-espresso">Lezzetlerimiz</h2>
+        <p class="text-muted">Kahve Durağı'nda sizi neler bekliyor?</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden kart-hover">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
+              class="card-img-top kart-gorsel" alt="Taze demlenmiş kahve">
+            <div class="card-body p-4">
+              <h3 class="card-title h4 fw-bold text-espresso">Özel Demleme Kahveler</h3>
+              <p class="card-text text-muted small">
+                Etiyopya, Kolombiya ve Brezilya çekirdeklerinden hazırlanan kahve çeşitleri.
+              </p>
+              <ul class="list-unstyled small mb-0">
+                <li class="d-flex justify-content-between border-bottom py-2"><span>Filtre Kahve</span><span class="fw-semibold text-karamel text-nowrap ms-2">85 ₺</span></li>
+                <li class="d-flex justify-content-between border-bottom py-2"><span>Espresso</span><span class="fw-semibold text-karamel text-nowrap ms-2">75 ₺</span></li>
+                <li class="d-flex justify-content-between py-2"><span>Latte</span><span class="fw-semibold text-karamel text-nowrap ms-2">110 ₺</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden kart-hover">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800&q=80"
+              class="card-img-top kart-gorsel" alt="Ev yapımı çikolatalı pasta">
+            <div class="card-body p-4">
+              <h3 class="card-title h4 fw-bold text-espresso">Ev Yapımı Tatlılar</h3>
+              <p class="card-text text-muted small">
+                Her gün taze hazırlanan tatlılar kahvenizin en iyi eşlikçisi.
+              </p>
+              <ul class="list-unstyled small mb-0">
+                <li class="d-flex justify-content-between border-bottom py-2"><span>Cheesecake</span><span class="fw-semibold text-karamel text-nowrap ms-2">140 ₺</span></li>
+                <li class="d-flex justify-content-between border-bottom py-2"><span>Brownie</span><span class="fw-semibold text-karamel text-nowrap ms-2">95 ₺</span></li>
+                <li class="d-flex justify-content-between py-2"><span>Kurabiye</span><span class="fw-semibold text-karamel text-nowrap ms-2">45 ₺</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm overflow-hidden kart-hover">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80"
+              class="card-img-top kart-gorsel" alt="Sakin kafe iç mekanı">
+            <div class="card-body p-4">
+              <h3 class="card-title h4 fw-bold text-espresso">Sessiz Çalışma Alanı</h3>
+              <p class="card-text text-muted small">
+                Ders çalışmak ve uzaktan çalışmak için sakin bir ortam.
+              </p>
+              <ul class="list-unstyled small mb-0">
+                <li class="border-bottom py-2"><i class="bi bi-wifi text-karamel me-2"></i>Ücretsiz hızlı Wi-Fi</li>
+                <li class="border-bottom py-2"><i class="bi bi-plug-fill text-karamel me-2"></i>Her masada priz</li>
+                <li class="py-2"><i class="bi bi-volume-mute-fill text-karamel me-2"></i>Sessiz çalışma köşesi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 pt-3 mb-4">
+        <p class="text-karamel fw-semibold text-uppercase small mb-1">Bu hafta</p>
+        <h3 class="h2 fw-bold text-espresso">Haftanın Önerileri</h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm kart-hover">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="ikon-daire rounded-circle bg-espresso text-karamel d-flex align-items-center justify-content-center fs-4">
+                  <i class="bi bi-cup-straw"></i>
+                </div>
+                <span class="badge rounded-pill bg-warning text-dark">Çok satan</span>
+              </div>
+              <h4 class="fw-bold text-espresso">Karamelli Latte</h4>
+              <p class="text-muted small mb-0">Ev yapımı karamel sosu ve taze espresso ile hazırlanan sütlü kahve.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 px-4 pb-4 d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-karamel">120 ₺</span>
+              <a href="#iletisim" class="btn btn-outline-dark btn-sm rounded-pill px-3">Sipariş Ver</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm kart-hover">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="ikon-daire rounded-circle bg-espresso text-karamel d-flex align-items-center justify-content-center fs-4">
+                  <i class="bi bi-snow"></i>
+                </div>
+                <span class="badge rounded-pill bg-info text-dark">Yeni</span>
+              </div>
+              <h4 class="fw-bold text-espresso">Soğuk Demleme</h4>
+              <p class="text-muted small mb-0">18 saat soğuk suda demlenen, yumuşak içimli buzlu kahve.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 px-4 pb-4 d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-karamel">105 ₺</span>
+              <a href="#iletisim" class="btn btn-outline-dark btn-sm rounded-pill px-3">Sipariş Ver</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm kart-hover">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="ikon-daire rounded-circle bg-espresso text-karamel d-flex align-items-center justify-content-center fs-4">
+                  <i class="bi bi-gift-fill"></i>
+                </div>
+                <span class="badge rounded-pill bg-success">%20 indirim</span>
+              </div>
+              <h4 class="fw-bold text-espresso">Kahve + Tatlı Menü</h4>
+              <p class="text-muted small mb-0">İstediğiniz kahvenin yanında günün tatlısı, birlikte daha uygun.</p>
+            </div>
+            <div class="card-footer bg-transparent border-0 px-4 pb-4 d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-karamel">160 ₺</span>
+              <a href="#iletisim" class="btn btn-outline-dark btn-sm rounded-pill px-3">Sipariş Ver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="iletisim" class="py-5">
+    <div class="container py-md-4">
+      <div class="text-center mb-5">
+        <p class="text-karamel fw-semibold text-uppercase small mb-1">Bize ulaşın</p>
+        <h2 class="display-6 fw-bold text-espresso">İletişim</h2>
+        <p class="text-muted">Rezervasyon, toplu sipariş veya önerileriniz için bize yazın.</p>
+      </div>
+
+      <div class="row g-3 text-center mb-5">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 bg-krem p-4">
+            <div class="ikon-daire rounded-circle bg-espresso text-karamel d-flex align-items-center justify-content-center fs-4 mx-auto">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <p class="fw-semibold text-espresso mb-1 mt-3">Adres</p>
+            <p class="text-muted small mb-0">Cumhuriyet Mah. Atatürk Cad. No: 12, Mucur / Kırşehir</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 bg-krem p-4">
+            <div class="ikon-daire rounded-circle bg-espresso text-karamel d-flex align-items-center justify-content-center fs-4 mx-auto">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <p class="fw-semibold text-espresso mb-1 mt-3">Telefon</p>
+            <p class="text-muted small mb-0">0386 000 00 00</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100 border-0 rounded-4 bg-krem p-4">
+            <div class="ikon-daire rounded-circle bg-espresso text-karamel d-flex align-items-center justify-content-center fs-4 mx-auto">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <p class="fw-semibold text-espresso mb-1 mt-3">Çalışma Saatleri</p>
+            <p class="text-muted small mb-0">Her gün 08:00 – 22:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 mx-auto">
+          <form class="card border-0 rounded-4 shadow p-4 p-md-5">
+            <h3 class="h4 fw-bold text-espresso text-center mb-4">Mesaj Gönderin</h3>
+            <div class="mb-3">
+              <label for="adSoyad" class="form-label fw-medium">Ad Soyad</label>
+              <input type="text" class="form-control form-control-lg" id="adSoyad" placeholder="Adınız ve soyadınız" required>
+            </div>
+            <div class="mb-3">
+              <label for="eposta" class="form-label fw-medium">E-posta</label>
+              <input type="email" class="form-control form-control-lg" id="eposta" placeholder="ornek@mail.com" required>
+            </div>
+            <div class="mb-4">
+              <label for="mesaj" class="form-label fw-medium">Mesaj</label>
+              <textarea class="form-control" id="mesaj" rows="4" placeholder="Mesajınızı yazın" required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                <i class="bi bi-send-fill me-2"></i>Gönder
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="altbilgi" class="bg-espresso text-white py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center text-center text-md-start">
+        <div class="col-12 col-md-6">
+          <h2 class="h4 fw-bold mb-2">
+            <i class="bi bi-cup-hot-fill text-karamel me-1"></i> Kahve Durağı
+          </h2>
+          <p class="small text-white-50 mb-0">Taze kahve, ev yapımı tatlılar ve sıcak bir sohbet için her gün buradayız.</p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="d-flex justify-content-center justify-content-md-end gap-2">
+            <a href="https://www.instagram.com" class="btn btn-outline-light rounded-circle" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com" class="btn btn-outline-light rounded-circle" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com" class="btn btn-outline-light rounded-circle" target="_blank" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.whatsapp.com" class="btn btn-outline-light rounded-circle" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="small text-white-50 text-center mb-0">&copy; 2026 Kahve Durağı. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
